@@ -1,0 +1,29 @@
+# Paso 1
+# En la clase Bombermam incluir la funcion
+# def set_image(self, img):
+#     pygameSurface = pygame.image.load(img).convert_alpha()
+#     self.image = pygameSurface
+
+# Paso 2
+# En el archivo vehiculo importar la clase Bomberman
+# from bomber import Bomberman
+
+# En la clase Aereo
+# Aplicar la herencia multiple asociado a la clase Bomberman
+
+# En la clase Aereo
+# En el constructor incluir dos nuevos parametros: _pos_x y _pos_y  con valores por defecto:  50, 50 correspondientemente
+
+# Dentro de la clase Aereo Modificar la linea super() por: Vehiculo.__init__(self, _modelo, _color, _marca, _velocidad, _cant_pasajeros, _peso) #herencia
+# Debajo incluir Bomberman.__init__(self, _modelo, _pos_x, _pos_y)
+
+# En la clase Aereo debajo de la declaracion de los atributos
+# incluir self.set_image("airplane.png")
+
+# Paso 3
+# En el archivo bomberman.py
+# Importar la clase Aereo
+# from vehiculo import Aereo
+# Modificar la funcion create_bomberman,
+# Reemplazando la instanciacion de Bomberman por Aereo, colocando todos sus campos
+
